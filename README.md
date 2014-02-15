@@ -48,5 +48,10 @@ Features:
   - a score under 0.7 asser that the integrity has been broken
   - intermediate scores depend on image and attacks on content / format.
 
+  
+![Application main screen](Images/AppMain.jpg "main screen")
+![Application mark integrity screen](Images/AppMark.jpg "mark integrity screen")
+![Application check integrity screen](Images/AppCheck.jpg "check integrity screen")
+
 
 
