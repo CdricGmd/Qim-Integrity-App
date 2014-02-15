@@ -1,0 +1,155 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$InstructionsFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- INSTRUCTIONS -->
+        <!--
+                <ImageView
+                    android:id="@+id/main_logo_image"
+                    android:layout_width="@dimen/main_logo_dim"
+                    android:layout_height="@dimen/main_logo_dim"
+                    android:src="@drawable/logo_tsp" />
+        -->
+        <!--
+        <ImageView
+            android:id="@+id/main_logo_image2"
+            android:layout_width="@dimen/main_logo_dim"
+            android:layout_height="@dimen/main_logo_dim"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/app_logo_flat3" />
+        -->
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/app_logo_flat3"
+            android:text="@string/welcome" />
+
+        <!-- DESCRIPTION -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textView_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="@string/hint_description"
+            android:text="@string/main_description" />
+
+        <!-- LOAD BUTTONS -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textView_loadimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="@string/hint_description"
+            android:text="@string/main_loadimage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/buttonLoadImage"
+                android:layout_width="@dimen/main_logo_dim"
+                android:layout_height="@dimen/main_logo_dim"
+                android:background="@drawable/button_custombg"
+                android:contentDescription=""
+                android:src="@drawable/ic_action_sd_storage"
+                android:tint="@color/translucent_red" />
+
+            <ImageButton
+                android:id="@+id/buttonLoadCamera"
+                android:layout_width="@dimen/main_logo_dim"
+                android:layout_height="@dimen/main_logo_dim"
+                android:background="@drawable/button_custombg"
+                android:contentDescription=""
+                android:src="@drawable/ic_action_camera"
+                android:tint="@color/translucent_red" />
+
+            <ImageButton
+                android:id="@+id/buttonLoadKey"
+                android:layout_width="@dimen/main_logo_dim"
+                android:layout_height="@dimen/main_logo_dim"
+                android:background="@drawable/button_custombg"
+                android:contentDescription=""
+                android:src="@drawable/ic_action_new_account"
+                android:tint="@color/translucent_red" />
+
+            <!--
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+            -->
+
+            <ImageButton
+                android:id="@+id/buttonUnloadFiles"
+                android:layout_width="@dimen/main_logo_dim"
+                android:layout_height="@dimen/main_logo_dim"
+                android:background="@drawable/button_custombg"
+                android:contentDescription=""
+                android:src="@drawable/ic_action_cancel"
+                android:tint="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <!-- INSTRUCTIONS -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textView_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="@string/hint_instructions"
+            android:text="@string/main_instructions" />
+
+        <!-- CREDITS -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textView_credits"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:hint="@string/hint_credits"
+            android:text="@string/main_credits" />
+    </LinearLayout>
+
+</ScrollView>

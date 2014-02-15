@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$CheckFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonCheckNow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_custombg"
+            android:contentDescription=""
+            android:drawableLeft="@drawable/ic_action_add_to_queue"
+            android:text="@string/title_section3"
+            android:tint="@color/translucent_red" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textview_check_statistics_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textview_check_statistics_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textview_check_statistics_measures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            	<ImageView
+            	    android:id="@+id/imageview_score1"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:adjustViewBounds="true"
+            	    android:contentDescription="@string/imageview_score_content_description" />
+
+            	<ImageView
+            	    android:id="@+id/imageview_score2"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:adjustViewBounds="true"
+            	    android:contentDescription="@string/imageview_score_content_description" />
+            	
+            	<ImageView
+            	    android:id="@+id/imageview_score3"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:adjustViewBounds="true"
+            	    android:contentDescription="@string/imageview_score_content_description" />
+            	
+            	<ImageView
+            	    android:id="@+id/imageview_score4"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:adjustViewBounds="true"
+            	    android:contentDescription="@string/imageview_score_content_description" />
+            	
+            	<ImageView
+            	    android:id="@+id/imageview_score5"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:adjustViewBounds="true"
+            	    android:contentDescription="@string/imageview_score_content_description" />
+            	
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageview_image_loaded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/imageview_image_loaded_content_description" />
+    </LinearLayout>
+
+</ScrollView>

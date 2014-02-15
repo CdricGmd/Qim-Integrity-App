@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Qim App</string>
+    <string name="title_activity_settings">Settings</string>
+    <!-- SETTINGS -->
+    <string name="action_settings">Settings</string>
+    <string name="action_share_image">Share image</string>
+    <string name="action_share_key">Share key</string>
+    <string name="menu_share">Share</string>
+    <string name="share_image_to">Share image</string>
+    <string name="share_key_to">Share key</string>
+    <!-- SECTIONS -->
+    <string name="title_section1">Instructions</string>
+    <string name="title_section2">Mark Integrity</string>
+    <string name="title_section3">Check integrity</string>
+    <string name="title_section4">Live Capture</string>
+    <!-- MESSAGES -->
+    <string name="message_mark_load_image">Load an image before marking</string>
+    <string name="message_check_load_imagekey">Load an image and a key before checking</string>
+    <string name="message_missing_image">An image is needed !</string>
+    <string name="message_missing_key">An image is needed !</string>
+    <string name="message_mark_already_processing">Marking is processing !</string>
+    <string name="message_mark_failed">Marking failed !</string>
+    <string name="message_mark_ready">Ready to mark !</string>
+    <string name="message_mark_progress">Marking in progress !</string>
+    <string name="message_mark_success">Marking done with success !</string>
+    <string name="message_check_already_processing">Checking is processing !</string>
+    <string name="message_check_failed">Checking failed !</string>
+    <string name="message_check_ready">Ready to check !</string>
+    <string name="message_check_progress">Checking in progress !</string>
+    <string name="message_check_success">Checking done with success !</string>
+    <!-- PREFERENCES -->
+    <!-- PREFERENCES : Storage -->
+    <string name="pref_storage_title">File storage</string>
+    <string name="pref_storage_media_folder_summary">Chose a directory to save images and videos</string>
+    <string name="pref_storage_media_folder_title">Images/Video directory</string>
+    <string name="pref_storage_keys_folder_summary">Chose a directory to save key files</string>
+    <string name="pref_storage_keys_folder_title">Key files directory</string>
+    <!-- PREFERENCES : Watermarking -->
+    <string name="pref_mqim_title">mQim parameters</string>
+    <string name="pref_mqim_delta_summary">Chose the quantization step size</string>
+    <string name="pref_mqim_delta_title">Quantization steps</string>
+    <string name="pref_mqim_delta_message">Enter the quantization step size used for the insertion/detection.</string>
+    <string name="pref_mqim_selectionmethod_summary">Select the mark selection method for the insertion</string>
+    <string name="pref_mqim_selectionmethod_title">Selection method for insertion</string>
+    <string name="pref_mqim_selectionmethod_defaultvalue">1</string>
+    <string name="pref_mqim_selectionmethod_dialogtitle">Select the selection method for the insertion</string>
+
+    <!-- MAIN TEXTS -->
+    <string name="welcome">Protect the integrity of your images.</string>
+    <string name="main_description">Description.\nThis app allows you to mark you images using transparent QIM method. The mark inserted ensures the integrity of the content. The check features can verify if the image has been modified.</string>
+    <string name="main_instructions">        	Instructions.
+        	\n- Load an image to mark it. 
+        	\n- Load an image and a key file to check the image\'s integrity status.
+        	\n- See Settings menu for file storage and watermaking method parameters.</string>
+    <string name="main_loadimage">Load image and key:</string>
+    <string name="main_credits">CREDITS : C.Golmard P.Jouin</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_instructions">Instructions</string>
+    <string name="hint_credits">Instructions</string>
+    <string name="imageview_image_loaded_content_description">[Loaded image]</string>
+    <string name="imageview_score_content_description">[score]</string>
+
+</resources>

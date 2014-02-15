@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colors HEX : AARRGGBB -->
+    <color name="translucent_red">#90ff0000</color>
+    <color name="translucent_green">#9000ff00</color>
+    <color name="translucent_blue">#900000ff</color>
+    <color name="translucent_orange">#90FF8000</color>
+    <color name="red">#ffff0000</color>
+    <color name="green">#ff00ff00</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="orange">#ffFF8000</color>
+    <color name="white">#ffffffff</color>
+    <color name="trans">#00ffffff</color>
+
+</resources>

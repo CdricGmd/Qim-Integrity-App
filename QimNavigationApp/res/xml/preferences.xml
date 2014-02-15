@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- STORAGE -->
+    <!--
+    <PreferenceCategory
+        android:key="pref_key_storage_settings"
+        android:title="@string/pref_storage_title" >
+        <Preference
+            android:key="pref_key_storage_media_folder"
+            android:summary="@string/pref_storage_media_folder_summary"
+            android:title="@string/pref_storage_media_folder_title" />
+        <Preference
+            android:key="pref_key_storage_keys_folder"
+            android:summary="@string/pref_storage_keys_folder_summary"
+            android:title="@string/pref_storage_keys_folder_title" />
+    </PreferenceCategory>
+    -->
+    <!-- MQIM -->
+    <PreferenceCategory
+        android:key="pref_key_mqim_settings"
+        android:title="@string/pref_mqim_title" >
+        <EditTextPreference
+            android:defaultValue="150"
+            android:dialogMessage="@string/pref_mqim_delta_message"
+            android:dialogTitle="@string/pref_mqim_delta_title"
+            android:inputType="number"
+            android:key="pref_key_mqim_delta"
+            android:maxLength="3"
+            android:summary="@string/pref_mqim_delta_summary"
+            android:title="@string/pref_mqim_delta_title" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="@string/pref_mqim_selectionmethod_dialogtitle"
+            android:entries="@array/pref_mqim_selectionmethod_entries"
+            android:entryValues="@array/pref_mqim_selectionmethod_values"
+            android:key="pref_key_mqim_selectionmethod"
+            android:summary="@string/pref_mqim_selectionmethod_summary"
+            android:title="@string/pref_mqim_selectionmethod_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
