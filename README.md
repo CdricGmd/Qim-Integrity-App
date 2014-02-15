@@ -4,6 +4,8 @@ A library and an Android application for content integrity watermarking.
 
 This repository represents my final-year major project in Telecom SudParis 'High Tech Imaging'.
 
+
+
 ## Folder structure
  
  - `QimWatermarking`: Watermarking library (C/C++) and command-line tool implementing the watermarking (insertion/extraction) algorithms
@@ -47,11 +49,11 @@ Features:
   - a score over 0.9 assert that the content has not been modifies
   - a score under 0.7 asser that the integrity has been broken
   - intermediate scores depend on image and attacks on content / format.
+  - 
+  
 
   
-![Application main screen](Images/AppMain.jpg "main screen")
-![Application mark integrity screen](Images/AppMark.jpg "mark integrity screen")
-![Application check integrity screen](Images/AppCheck.jpg "check integrity screen")
+
 
 
 
