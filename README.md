@@ -4,13 +4,12 @@ A library and an Android application for content integrity watermarking.
 
 This repository represents my final-year major project in Telecom SudParis 'High Tech Imaging'.
 
-
-
 ## Folder structure
  
  - `QimWatermarking`: Watermarking library (C/C++) and command-line tool implementing the watermarking (insertion/extraction) algorithms
  - `TestsOnImageFolder`: Applescript for automated tests on images: watermaking transparency and robustness
  - `QimNavigationApp`: Android application project for image watermarking using the native library
+ - `Images`: Screenshots
  
 ## Objectives
 
@@ -49,7 +48,12 @@ Features:
   - a score over 0.9 assert that the content has not been modifies
   - a score under 0.7 asser that the integrity has been broken
   - intermediate scores depend on image and attacks on content / format.
-  - 
+  
+Screenshots
+  
+![Application main screen](Images/AppMain.png "main screen")
+![Application mark integrity screen](Images/AppMark.png "mark integrity screen")
+![Application check integrity screen](Images/AppCheck.png "check integrity screen")
   
 
   
