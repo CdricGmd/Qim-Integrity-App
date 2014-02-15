@@ -55,7 +55,7 @@
         	\n- Load an image and a key file to check the image\'s integrity status.
         	\n- See Settings menu for file storage and watermaking method parameters.</string>
     <string name="main_loadimage">Load image and key:</string>
-    <string name="main_credits">CREDITS : C.Golmard P.Jouin</string>
+    <string name="main_credits">@CdricGmd</string>
     <string name="hint_description">Description</string>
     <string name="hint_instructions">Instructions</string>
     <string name="hint_credits">Instructions</string>
