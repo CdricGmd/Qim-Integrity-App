@@ -60,7 +60,8 @@ Features:
   - intermediate scores depend on image and attacks on content / format.
   
 Screenshots
-  
+
+
 ![Application check integrity screen](Images/AppCheck.png "check integrity screen")
 ![Application mark integrity screen](Images/AppMark.png "mark integrity screen")
   
