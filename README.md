@@ -4,6 +4,11 @@ A library and an Android application for content integrity watermarking.
 
 This repository represents my final-year major project in Telecom SudParis 'High Tech Imaging'.
 
+The project is pubished under The MIT License (MIT)
+> Copyright (c) 2014 Cédric Golmard, Institut Mines – Telecom ; Telecom SudParis as part of HighTech Imaging major
+
+The subject was proposed by Mihai Mitrea and Marwen Hasnaoui, researchers at [Institut Mines – Telecom ; ARTEMIS](http://artemis.telecom-sudparis.eu/).
+
 ## Folder structure
  
  - `QimWatermarking`: Watermarking library (C/C++) and command-line tool implementing the watermarking (insertion/extraction) algorithms
@@ -24,19 +29,24 @@ The watermarking is based on QIM and ST-DM techniques to insert signature in the
 
 ## Watermaking library
 
-The Watermarking library (C/C++) uses and requires [OpenCV library](http://opencv.org) for image processing. It provides functions for:
+The Watermarking library (C/C++) uses and requires [OpenCV library (under BSD License)](http://opencv.org) for image processing. It provides functions for:
 
 - signature generation based on image content
 - image watermaking insertion and detection
 - integrity checking comparing detected and computed signatures
 - similarity measures (PSNR, SSIM, IF, NCC)
 
-The signature insertion generate a "key file", which is needed for for the detection.
-
+The signature insertion generate a "key file", which is needed for the detection.
 
 ## Android Application
 
 The Android application uses the QimWatermaking native library (through JNI) to enable marking and integrity checking of images.
+
+Technical challenges (as part of Télécom SudParis HighTech Imaging major):
+
+- use a native library in Android (Write once...)
+- demonstrate and evaluate performances of the library on lightweight devices
+- give access to the library features _via_ an easy and confortable user experience
 
 Features: 
 
@@ -51,9 +61,8 @@ Features:
   
 Screenshots
   
-![Application main screen](Images/AppMain.png "main screen")
-![Application mark integrity screen](Images/AppMark.png "mark integrity screen")
 ![Application check integrity screen](Images/AppCheck.png "check integrity screen")
+![Application mark integrity screen](Images/AppMark.png "mark integrity screen")
   
 
   
