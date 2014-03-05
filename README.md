@@ -1,7 +1,7 @@
 # Qim-Integrity-App
-
 A library and an Android application for content integrity watermarking.
 
+-----
 This repository represents my final-year major project in Telecom SudParis 'High Tech Imaging'.
 
 The project is pubished under The MIT License (MIT)
@@ -9,6 +9,7 @@ The project is pubished under The MIT License (MIT)
 
 The subject was proposed by Mihai Mitrea and Marwen Hasnaoui, researchers at [Institut Mines – Telecom ; ARTEMIS](http://artemis.telecom-sudparis.eu/).
 
+-----
 ## Folder structure
  
  - `QimWatermarking`: Watermarking library (C/C++) and command-line tool implementing the watermarking (insertion/extraction) algorithms
@@ -59,7 +60,7 @@ Features:
   - a score under 0.7 asser that the integrity has been broken
   - intermediate scores depend on image and attacks on content / format.
   
-Screenshots
+Screenshots:
 
 ![Application check integrity screen](Images/AppCheck.png "check integrity screen")
 ![Application mark integrity screen](Images/AppMark.png "mark integrity screen")
