@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Qim-integrity-app by CdricGmd</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Qim-integrity-app</h1>
+        <p class="header">A library and an Android application for invisible content integrity watermarking</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/CdricGmd/Qim-Integrity-App/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/CdricGmd/Qim-Integrity-App/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/CdricGmd/Qim-Integrity-App">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/CdricGmd">CdricGmd</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a name="qim-integrity-app" class="anchor" href="#qim-integrity-app"><span class="octicon octicon-link"></span></a>Qim-Integrity-App</h1>
+
+<p>A library and an Android application for content integrity watermarking.</p>
+
+<hr><p>This repository represents my final-year major project in Telecom SudParis 'High Tech Imaging'.</p>
+
+<p>The project is pubished under The MIT License (MIT)</p>
+
+<blockquote>
+<p>Copyright (c) 2014 Cédric Golmard, Institut Mines – Telecom ; Telecom SudParis as part of HighTech Imaging major</p>
+</blockquote>
+
+<p>The subject was proposed by Mihai Mitrea and Marwen Hasnaoui, researchers at <a href="http://artemis.telecom-sudparis.eu/">Institut Mines – Telecom ; ARTEMIS</a>.</p>
+
+<hr><h2>
+<a name="folder-structure" class="anchor" href="#folder-structure"><span class="octicon octicon-link"></span></a>Folder structure</h2>
+
+<ul>
+<li>
+<code>QimWatermarking</code>: Watermarking library (C/C++) and command-line tool implementing the watermarking (insertion/extraction) algorithms</li>
+<li>
+<code>TestsOnImageFolder</code>: Applescript for automated tests on images: watermaking transparency and robustness</li>
+<li>
+<code>QimNavigationApp</code>: Android application project for image watermarking using the native library</li>
+<li>
+<code>Images</code>: Screenshots</li>
+</ul><h2>
+<a name="objectives" class="anchor" href="#objectives"><span class="octicon octicon-link"></span></a>Objectives</h2>
+
+<p>The main objective is to implement a technique asserting that the content of an image has not been modified (Integrity), with constraints: </p>
+
+<ul>
+<li>Watermarking: insert a message, detect and decide if the content has been modified.</li>
+<li>Transparency: the insertion must be transparent (according to human eyes)</li>
+<li>Robustness: the message must be recoverable if the image has been requantized</li>
+<li>Weakness: the decision must detect modification on the content (objects, shapes, ...) of the image</li>
+</ul><p>The watermarking is based on QIM and ST-DM techniques to insert signature in the image based on its content.</p>
+
+<h2>
+<a name="watermaking-library" class="anchor" href="#watermaking-library"><span class="octicon octicon-link"></span></a>Watermaking library</h2>
+
+<p>The Watermarking library (C/C++) uses and requires <a href="http://opencv.org">OpenCV library (under BSD License)</a> for image processing. It provides functions for:</p>
+
+<ul>
+<li>signature generation based on image content</li>
+<li>image watermaking insertion and detection</li>
+<li>integrity checking comparing detected and computed signatures</li>
+<li>similarity measures (PSNR, SSIM, IF, NCC)</li>
+</ul><p>The signature insertion generate a "key file", which is needed for the detection.</p>
+
+<h2>
+<a name="android-application" class="anchor" href="#android-application"><span class="octicon octicon-link"></span></a>Android Application</h2>
+
+<p>The Android application uses the QimWatermaking native library (through JNI) to enable marking and integrity checking of images.</p>
+
+<p>Technical challenges (as part of Télécom SudParis HighTech Imaging major):</p>
+
+<ul>
+<li>use a native library in Android (Write once...)</li>
+<li>demonstrate and evaluate performances of the library on lightweight devices</li>
+<li>give access to the library features <em>via</em> an easy and confortable user experience</li>
+</ul><p>Features: </p>
+
+<ul>
+<li>mark an image loaded from the Image Library</li>
+<li>mark an image taken with the camera</li>
+<li>share the marked image and the key file</li>
+<li>check the integrity given an image loaded from the Image Library and a key file loaded from the device's storage
+
+<ul>
+<li>it gives an "integrity score" between 0.0 and 1.0</li>
+<li>a score over 0.9 assert that the content has not been modifies</li>
+<li>a score under 0.7 asser that the integrity has been broken</li>
+<li>intermediate scores depend on image and attacks on content / format.</li>
+</ul>
+</li>
+</ul><p>Screenshots:</p>
+
+<p><img src="Images/AppCheck.png" alt="Application check integrity screen" title="check integrity screen"><img src="Images/AppMark.png" alt="Application mark integrity screen" title="mark integrity screen"><img src="QimNavigationApp/res/drawable-mdpi/frame_grey_transp.png" alt="Application logo" title="Application logo"></p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
