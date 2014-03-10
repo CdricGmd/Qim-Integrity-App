@@ -140,7 +140,7 @@ public class CommonResources {
 				Environment.getExternalStoragePublicDirectory(theenvironment),
 				albumName);
 		if (!file.mkdirs()) {
-			Log.e(TAG, "Directory not created");
+			//Log.e(TAG, "Directory not created");
 		}
 		return file;
 	}

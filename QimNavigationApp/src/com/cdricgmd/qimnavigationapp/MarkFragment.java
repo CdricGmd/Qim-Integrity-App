@@ -39,7 +39,7 @@ public class MarkFragment extends Fragment {
 			@Override
 			public void onClick(View arg0) {
 
-				Log.i(TAG, "Button: Mark");
+				//Log.i(TAG, "Button: Mark");
 				updateUI(getView());
 
 				if (CommonResources.mark_status == CommonResources.Status.WAITING)
@@ -99,7 +99,7 @@ public class MarkFragment extends Fragment {
 			updateTextMeasures(v);
 			updateImageView(v);
 		} catch (Exception e) {
-			Log.e(TAG, "Cannot update UI. "+e.getMessage());
+			//Log.e(TAG, "Cannot update UI. "+e.getMessage());
 		}
 	}
 
@@ -155,19 +155,20 @@ public class MarkFragment extends Fragment {
 
 		switch (CommonResources.mark_status) {
 		case DONE:
-			statsView.setText(Html.fromHtml("<i>Marking done.</i>"));
+			statsView.setText(Html.fromHtml("<i>"+getString(R.string.marking_done)+"</i>"));
 			break;
 		case PROCESSING:
-			statsView.setText(Html.fromHtml("<i>Marking in progress.</i>"));
+			statsView.setText(Html.fromHtml("<i>"+getString(R.string.marking_inprogress)+"</i>"));
 			break;
 		case WAITING:
-			statsView.setText(Html.fromHtml("<i>Waiting for an image.</i>"));
+			statsView.setText(Html
+					.fromHtml("<i>"+getString(R.string.marking_waiting)+"</i>"));
 			break;
 		case READY:
-			statsView.setText(Html.fromHtml("<i>Ready to mark.</i>"));
+			statsView.setText(Html.fromHtml("<i>"+getString(R.string.marking_ready)+"</i>"));
 			break;
 		case FAILURE:
-			statsView.setText(Html.fromHtml("<i>Error : interruption.</i>"));
+			statsView.setText(Html.fromHtml("<i>"+getString(R.string.marking_fail)+"</i>"));
 			break;
 
 		default:
@@ -210,7 +211,7 @@ public class MarkFragment extends Fragment {
 				.findViewById(R.id.textview_mark_statistics_time);
 		switch (CommonResources.mark_status) {
 		case DONE:
-			timeView.setText(Html.fromHtml("<b>Time: </b>"
+			timeView.setText(Html.fromHtml("<b>"+ getString(R.string.checking_time) +"</b>"
 					+ CommonResources.mark_time_ms + "ms"));
 			break;
 		default:
@@ -250,8 +251,7 @@ public class MarkFragment extends Fragment {
 					+ CommonResources.getNewImageFileName();
 			CommonResources.key_saved_path = keyfiledir.toString() + "/"
 					+ CommonResources.getNewKeyFileName();
-			Log.i(TAG, CommonResources.image_marked_path + " | "
-					+ CommonResources.key_saved_path);
+			//Log.i(TAG, CommonResources.image_marked_path + " | " + CommonResources.key_saved_path);
 
 			// Insertion
 			long startTime = System.currentTimeMillis();
@@ -327,7 +327,7 @@ public class MarkFragment extends Fragment {
 						CommonResources.image);
 			}
 			catch(Exception e){
-				Log.e(TAG, e.getMessage());
+				//Log.e(TAG, e.getMessage());
 			}
 			
 			// CommonResources.mark_if =

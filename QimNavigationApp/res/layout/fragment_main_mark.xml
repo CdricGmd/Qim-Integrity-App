@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_custombg"
             android:contentDescription=""
-            android:drawableLeft="@drawable/ic_action_make_available_offline"
+            android:drawableLeft="@drawable/mark"
             android:text="@string/title_section2"
             android:tint="@color/translucent_red" />
 

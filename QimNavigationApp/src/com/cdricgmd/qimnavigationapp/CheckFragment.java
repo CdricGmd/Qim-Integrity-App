@@ -34,7 +34,7 @@ public class CheckFragment extends Fragment {
 			@Override
 			public void onClick(View arg0) {
 
-				Log.i(TAG, "Button: Check");
+				//Log.i(TAG, "Button: Check");
 				updateUI(getView());
 
 				if ("".equals(CommonResources.image_marked_path))
@@ -86,7 +86,7 @@ public class CheckFragment extends Fragment {
 			updateScore(v);
 			updateImageView(v);
 		} catch (Exception e) {
-			Log.e(TAG, "Cannot update UI. " + e.getMessage());
+			//Log.e(TAG, "Cannot update UI. " + e.getMessage());
 		}
 	}
 
@@ -123,20 +123,21 @@ public class CheckFragment extends Fragment {
 
 		switch (CommonResources.check_status) {
 		case DONE:
-			statsView.setText(Html.fromHtml("<i>Checking done.</i>"));
+			statsView.setText(Html.fromHtml("<i>"+getString(R.string.checking_done)+"</i>"));
+			
 			break;
 		case PROCESSING:
-			statsView.setText(Html.fromHtml("<i>Checking in progress.</i>"));
+			statsView.setText(Html.fromHtml("<i>"+getString(R.string.checking_inprogress)+"</i>"));
 			break;
 		case WAITING:
 			statsView.setText(Html
-					.fromHtml("<i>Waiting for an image and a key.</i>"));
+					.fromHtml("<i>"+getString(R.string.checking_waiting)+"</i>"));
 			break;
 		case READY:
-			statsView.setText(Html.fromHtml("<i>Ready to check.</i>"));
+			statsView.setText(Html.fromHtml("<i>"+getString(R.string.checking_ready)+"</i>"));
 			break;
 		case FAILURE:
-			statsView.setText(Html.fromHtml("<i>Error : interruption.</i>"));
+			statsView.setText(Html.fromHtml("<i>"+getString(R.string.checking_fail)+"</i>"));
 			break;
 
 		default:
@@ -153,7 +154,7 @@ public class CheckFragment extends Fragment {
 			DecimalFormat df = new DecimalFormat("0.0000");
 			String text = "";
 			if (CommonResources.check_integrityscore >= 0) {
-				text += "<b>Integrity score: </b>"//
+				text += "<b>"+ getString(R.string.checking_score) +"</b>"//
 						+ df.format(CommonResources.check_integrityscore); //
 			}
 			statsView.setText(Html.fromHtml(text));
@@ -219,7 +220,7 @@ public class CheckFragment extends Fragment {
 				.findViewById(R.id.textview_check_statistics_time);
 		switch (CommonResources.check_status) {
 		case DONE:
-			timeView.setText(Html.fromHtml("<b>Time: </b>"
+			timeView.setText(Html.fromHtml("<b>"+ getString(R.string.checking_time) +"</b>"
 					+ CommonResources.check_time_ms + "ms"));
 			break;
 		default:

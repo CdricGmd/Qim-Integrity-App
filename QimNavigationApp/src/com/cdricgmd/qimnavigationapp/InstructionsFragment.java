@@ -50,7 +50,7 @@ public class InstructionsFragment extends Fragment {
 				}
 
 				Toast.makeText(getActivity().getApplicationContext(),
-						"Load an image.", Toast.LENGTH_SHORT).show();
+						getString(R.string.message_loadimage), Toast.LENGTH_SHORT).show();
 				Intent i = new Intent(
 						Intent.ACTION_PICK,
 						android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
@@ -78,7 +78,7 @@ public class InstructionsFragment extends Fragment {
 			        if (photo != null) {
 			        	// Toast
 						Toast.makeText(getActivity().getApplicationContext(),
-								"Take a picture.", Toast.LENGTH_SHORT).show();
+								getString(R.string.message_takepicture), Toast.LENGTH_SHORT).show();
 						
 						// Start Activity
 			            takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT,
@@ -97,7 +97,7 @@ public class InstructionsFragment extends Fragment {
 					return;
 				}
 				Toast.makeText(getActivity().getApplicationContext(),
-						"Load a key file.", Toast.LENGTH_SHORT).show();
+						getString(R.string.message_loadkey), Toast.LENGTH_SHORT).show();
 				Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
 				intent.setType("file/*");
 				startActivityForResult(intent, CommonResources.RESULT_LOAD_KEY);
@@ -108,9 +108,9 @@ public class InstructionsFragment extends Fragment {
 			@Override
 			public void onClick(View arg0) {
 				Toast.makeText(getActivity().getApplicationContext(),
-						"Unload files.", Toast.LENGTH_SHORT).show();
+						getString(R.string.message_unload), Toast.LENGTH_SHORT).show();
 				CommonResources.unloadFiles();
-				Log.i(TAG, "Image and Key file unloaded.");
+				//Log.i(TAG, "Image and Key file unloaded.");
 
 				// updateUI(getView());
 				// Update all fragments
@@ -152,21 +152,19 @@ public class InstructionsFragment extends Fragment {
 						.getString(columnIndex));
 				cursor.close();
 
-				Log.i(TAG, "Image file loaded: "
-						+ CommonResources.image_loaded_path);
+				//Log.i(TAG, "Image file loaded: "+ CommonResources.image_loaded_path);
 
 				break;
 			case CommonResources.RESULT_LOAD_KEY:
 				CommonResources.key_saved_path = data.getData().getPath();
 
-				Log.i(TAG, "Key file loaded: " + CommonResources.key_saved_path);
+				//Log.i(TAG, "Key file loaded: " + CommonResources.key_saved_path);
 
 				break;
 			case CommonResources.RESULT_LOAD_CAMERA:
 				galleryAddCameraPic();
 				CommonResources.setImage_loaded_path(CommonResources.mCapturedImage);
-				Log.i(TAG, "Image file loaded from picture taken: "
-						+ CommonResources.image_loaded_path);
+				//Log.i(TAG, "Image file loaded from picture taken: "+ CommonResources.image_loaded_path);
 				/*
 				 * Bundle extras = data.getExtras(); // CommonResources.image =
 				 * (Bitmap) extras.get("data"); Uri photo =

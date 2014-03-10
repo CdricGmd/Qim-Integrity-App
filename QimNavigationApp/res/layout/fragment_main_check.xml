@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_custombg"
             android:contentDescription=""
-            android:drawableLeft="@drawable/ic_action_add_to_queue"
+            android:drawableLeft="@drawable/check"
             android:text="@string/title_section3"
             android:tint="@color/translucent_red" />
 

@@ -82,7 +82,7 @@ public class WatermarkingEngine {
 					(String) (CommonResources.key_saved_path), delta, alpha);
 			break;
 		default:
-			Log.i(TAG, "No insertion method chosen");
+			//Log.i(TAG, "No insertion method chosen");
 			break;
 		}
 
@@ -99,8 +99,7 @@ public class WatermarkingEngine {
 					FileOutputStream out = new FileOutputStream(
 							CommonResources.image_marked_path);
 					if (bmp.compress(Bitmap.CompressFormat.PNG, 90, out))
-						Log.i(TAG, "Save marked image at: "
-								+ CommonResources.image_marked_path);
+						//Log.i(TAG, "Save marked image at: " + CommonResources.image_marked_path);
 					out.close();
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -120,12 +119,11 @@ public class WatermarkingEngine {
 		Mat mat = new Mat();
 		Utils.bitmapToMat(CommonResources.image, mat);
 
-		Log.i(TAG, "Detection begin");
+		//Log.i(TAG, "Detection begin");
 		CommonResources.check_integrityscore = nativeInsertionQimDetection(
 				mat.getNativeObjAddr(), CommonResources.key_saved_path, delta,
 				alpha);
-		Log.i(TAG, "Detection done, score is "
-				+ CommonResources.check_integrityscore);
+		//Log.i(TAG, "Detection done, score is "+ CommonResources.check_integrityscore);
 	}
 
 	/*

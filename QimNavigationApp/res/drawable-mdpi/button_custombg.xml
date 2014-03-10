@@ -16,6 +16,11 @@
         <shape>
             <solid
                 android:color="@color/trans" />
+            
+<!--             <corners -->
+<!--                 android:width="1dp" -->
+<!--                 android:color="@color/translucent_orange"/> -->
+                
         </shape>
     </item>
 </selector>

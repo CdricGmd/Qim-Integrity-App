@@ -190,14 +190,14 @@ public class MainActivity extends FragmentActivity {
 		public void onManagerConnected(int status) {
 			switch (status) {
 			case LoaderCallbackInterface.SUCCESS: {
-				Log.i(TAG, "OpenCV loaded successfully");
+				//Log.i(TAG, "OpenCV loaded successfully");
 				try {
 					System.loadLibrary("QimNativeEngine");
-					Log.i(TAG, "Native code library successfully loaded");
+					//Log.i(TAG, "Native code library successfully loaded");
 				} catch (UnsatisfiedLinkError e) {
-					Log.v(TAG, "Native code library failed to load.\n" + e);
+					//Log.v(TAG, "Native code library failed to load.\n" + e);
 				} catch (Exception e) {
-					Log.v(TAG, "Native code library exception: " + e);
+					//Log.v(TAG, "Native code library exception: " + e);
 				}
 			}
 				break;

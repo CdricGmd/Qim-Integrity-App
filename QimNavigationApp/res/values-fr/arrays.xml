@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- MQIM SELECTION METHODS entries -->
+    <string-array name="pref_mqim_selectionmethod_entries">
+        <item>Aléatoire (rapide)</item>
+        <item>Critère de détection a priori (très robuste)</item>
+        <item>Critère d\'énergie (robuste)</item>
+    </string-array>
+    <!-- MQIM SELECTION METHODS values -->
+    <string-array name="pref_mqim_selectionmethod_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>

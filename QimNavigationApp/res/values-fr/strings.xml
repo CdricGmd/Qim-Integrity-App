@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Qim App</string>
+    <string name="title_activity_settings">Réglages</string>
+    <!-- SETTINGS -->
+    <string name="action_settings">Réglages</string>
+    <string name="action_share_image">Partager l\'image</string>
+    <string name="action_share_key">Partager le fichier clé</string>
+    <string name="menu_share">Partager</string>
+    <string name="share_image_to">Partager l\'image</string>
+    <string name="share_key_to">Partager le fichier clé</string>
+    <!-- MESSAGES CHECK -->
+    <string name="checking_done">Détection terminée avec succès !</string>
+    <string name="checking_inprogress">Détection en cours !</string>
+    <string name="checking_waiting">Chargez un image et une fichier clé.</string>
+    <string name="checking_fail">Echec de la détection :(</string>
+    <string name="checking_ready">Prêt. appuyez sur "Detection".</string>
+    <string name="checking_score">Score d\'intégrité : </string>
+    <string name="checking_time">Temps de détection : </string>
+    <!-- MESSAGES MARK -->
+    <string name="marking_done">Insertion terminée avec succès !</string>
+    <string name="marking_inprogress">Insertion en cours !</string>
+    <string name="marking_waiting">Chargez un image pour la marquer.</string>
+    <string name="marking_fail">Echec de l\'insertion :(</string>
+    <string name="marking_ready">Prêt. appuyez sur "Marquage".</string>
+    <string name="marking_time">Temps d\'insertion : </string>
+    <!-- SECTIONS -->
+    <string name="title_section1">Instructions</string>
+    <string name="title_section2">Marquage</string>
+    <string name="title_section3">Detection</string>
+    <string name="title_section4">Capture</string>
+    <!-- MESSAGES -->
+    <string name="message_mark_load_image">Insertion impossible. Avez-vous chargé une image ?</string>
+    <string name="message_check_load_imagekey">Detection impossible. Avez-vous chargé une image et un fichier clé ?</string>
+    <string name="message_missing_image">Une image est requise !</string>
+    <string name="message_missing_key">Un fichier clé est requis !</string>
+    <string name="message_mark_already_processing">Insertion déjà en cours !</string>
+    <string name="message_mark_failed">L\'insertion a échoué !</string>
+    <string name="message_mark_ready">Prêt pour l\'insertion !</string>
+    <string name="message_mark_progress">Insertion en cours !</string>
+    <string name="message_mark_success">L\'image a été marquée avec succès</string>
+    <string name="message_check_already_processing">Une détection est déjà en cours !</string>
+    <string name="message_check_failed">La détection a échoué !</string>
+    <string name="message_check_ready">Prêt pour la détection !</string>
+    <string name="message_check_progress">Détection en cours !</string>
+    <string name="message_check_success">Détection terminé, score calculé !</string>
+    <string name="message_loadimage">Choisissez une image à marquer</string>
+    <string name="message_takepicture">Prenez une photo à marquer.</string>
+    <string name="message_loadkey">Chargez un fichier clé pour la détection.</string>
+    <string name="message_unload">Fichiers en mémoire libérés</string>
+    <!-- PREFERENCES -->
+    <!-- PREFERENCES : Storage -->
+    <string name="pref_storage_title">Stockage des fichiers</string>
+    <string name="pref_storage_media_folder_summary">Choisissez un dossier où stocker les images</string>
+    <string name="pref_storage_media_folder_title">Dossier des images</string>
+    <string name="pref_storage_keys_folder_summary">Choisissez un dossier où stocker les fichiers clés</string>
+    <string name="pref_storage_keys_folder_title">Dossier des fichers clés</string>
+    <!-- PREFERENCES : Watermarking -->
+    <string name="pref_mqim_title">Paramètres du Watermarking</string>
+    <string name="pref_mqim_delta_summary">Choix du nombre de niveaux de quatification</string>
+    <string name="pref_mqim_delta_title">Niveaux de quatification</string>
+    <string name="pref_mqim_delta_message">Saississez le nombre de niveaux de quatification.</string>
+    <string name="pref_mqim_selectionmethod_summary">Choix de la méthode d\'insertion pour le marquage.</string>
+    <string name="pref_mqim_selectionmethod_title">Méthode d\'insertion</string>
+    <string name="pref_mqim_selectionmethod_defaultvalue">1</string>
+    <string name="pref_mqim_selectionmethod_dialogtitle">Selectionnez la méthode d\'insertion pour le marquage.</string>
+
+    <!-- MAIN TEXTS -->
+    <string name="welcome">Protégez l\'intégrité du contenu de vos images.</string>
+    <string name="main_description">Soyez sûrs qu\'une image que vous avez partagé n\'a pas été modifiée..
+        \nCette application permet de marquer vos image de façon invisible une utilisant une méthode de Watermarking appellée QIM. La marque insérée décrit le contenu de votre image et génère un fichier clé. La fonction "Detection" permet de vérifier si une image marquée a été modifiée. 
+        \nLe résultat est donné sous forme de score entre 0 et 1.
+    </string>
+    <string name="main_instructions">Instructions.
+        	\n- Charger une image à marquer (Galerie ou Appareil photo). 
+        	\n- Charger une image déjà marquée et le fichier clé associé pour s\'assurer de l\'intégrité du contenu.
+        	\n- La méthode de Watermarking peut être paramétrée dans les réglages.</string>
+    <string name="main_loadimage">Charger une image et/ou un fichier-clé:</string>
+    <string name="main_credits">\@CdricGmd ; Institut Mines - Télécom ; Télécom SudParis majeure HighTech Imaging</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_instructions">Instructions</string>
+    <string name="hint_credits">Instructions</string>
+    <string name="imageview_image_loaded_content_description">[Image chargée]</string>
+    <string name="imageview_score_content_description">[score]</string>
+
+</resources>

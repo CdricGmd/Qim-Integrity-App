@@ -15,6 +15,21 @@
     <string name="title_section2">Mark Integrity</string>
     <string name="title_section3">Check integrity</string>
     <string name="title_section4">Live Capture</string>
+    <!-- MESSAGES CHECK -->
+    <string name="checking_done">Checking done !</string>
+    <string name="checking_inprogress">Checking in progress !</string>
+    <string name="checking_waiting">Load an image and key file before marking.</string>
+    <string name="checking_fail">Checking failed :(</string>
+    <string name="checking_ready">Ready. Click "Check."</string>
+    <string name="checking_score">Integrity score: </string>
+    <string name="checking_time">Time: </string>
+    <!-- MESSAGES MARK -->
+    <string name="marking_done">Insertion done !</string>
+    <string name="marking_inprogress">Insertion in progress !</string>
+    <string name="marking_waiting">Load an image to mark it.</string>
+    <string name="marking_fail">Interruption :(</string>
+    <string name="marking_ready">Ready. Click on "Mark".</string>
+    <string name="marking_time">Time : </string>
     <!-- MESSAGES -->
     <string name="message_mark_load_image">Load an image before marking</string>
     <string name="message_check_load_imagekey">Load an image and a key before checking</string>
@@ -30,6 +45,10 @@
     <string name="message_check_ready">Ready to check !</string>
     <string name="message_check_progress">Checking in progress !</string>
     <string name="message_check_success">Checking done with success !</string>
+    <string name="message_loadimage">Pick an image for marking</string>
+    <string name="message_takepicture">Take a picture</string>
+    <string name="message_loadkey">Load a key-file for integrity checking</string>
+    <string name="message_unload">Files unloaded</string>
     <!-- PREFERENCES -->
     <!-- PREFERENCES : Storage -->
     <string name="pref_storage_title">File storage</string>
@@ -38,7 +57,7 @@
     <string name="pref_storage_keys_folder_summary">Chose a directory to save key files</string>
     <string name="pref_storage_keys_folder_title">Key files directory</string>
     <!-- PREFERENCES : Watermarking -->
-    <string name="pref_mqim_title">mQim parameters</string>
+    <string name="pref_mqim_title">Watermarking parameters</string>
     <string name="pref_mqim_delta_summary">Chose the quantization step size</string>
     <string name="pref_mqim_delta_title">Quantization steps</string>
     <string name="pref_mqim_delta_message">Enter the quantization step size used for the insertion/detection.</string>
@@ -49,13 +68,13 @@
 
     <!-- MAIN TEXTS -->
     <string name="welcome">Protect the integrity of your images.</string>
-    <string name="main_description">Description.\nThis app allows you to mark you images using transparent QIM method. The mark inserted ensures the integrity of the content. The check features can verify if the image has been modified.</string>
+    <string name="main_description">Description.\nThis app allows you to mark you images using transparent Watermarking QIM method. The mark inserted ensures the integrity of the content. The check features can verify if the image has been modified.</string>
     <string name="main_instructions">        	Instructions.
         	\n- Load an image to mark it. 
-        	\n- Load an image and a key file to check the image\'s integrity status.
+        	\n- Load an image and a key file to check the image\'s integrity status (score).
         	\n- See Settings menu for file storage and watermaking method parameters.</string>
     <string name="main_loadimage">Load image and key:</string>
-    <string name="main_credits">@CdricGmd</string>
+    <string name="main_credits">\@CdricGmd ; Institut Mines - Télécom ; Télécom SudParis as part of HighTech Imaging major</string>
     <string name="hint_description">Description</string>
     <string name="hint_instructions">Instructions</string>
     <string name="hint_credits">Instructions</string>
