@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Qim-integrity-app by CdricGmd</title>
+    <title>Qim App by CdricGmd</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -16,7 +16,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">Qim-integrity-app</h1>
+        <h1 class="header">Qim App</h1>
         <p class="header">A library and an Android application for invisible content integrity watermarking</p>
 
         <ul>
@@ -30,12 +30,7 @@
 
       </header>
       <section>
-        <h1>
-<a name="qim-integrity-app" class="anchor" href="#qim-integrity-app"><span class="octicon octicon-link"></span></a>Qim-Integrity-App</h1>
-
-<p>A library and an Android application for content integrity watermarking.</p>
-
-<hr><p>This repository represents my final-year major project in Telecom SudParis 'High Tech Imaging'.</p>
+        <p>This repository represents my final-year major project in Telecom SudParis 'High Tech Imaging'.</p>
 
 <p>The project is pubished under The MIT License (MIT)</p>
 
@@ -46,18 +41,6 @@
 <p>The subject was proposed by Mihai Mitrea and Marwen Hasnaoui, researchers at <a href="http://artemis.telecom-sudparis.eu/">Institut Mines – Telecom ; ARTEMIS</a>.</p>
 
 <hr><h2>
-<a name="folder-structure" class="anchor" href="#folder-structure"><span class="octicon octicon-link"></span></a>Folder structure</h2>
-
-<ul>
-<li>
-<code>QimWatermarking</code>: Watermarking library (C/C++) and command-line tool implementing the watermarking (insertion/extraction) algorithms</li>
-<li>
-<code>TestsOnImageFolder</code>: Applescript for automated tests on images: watermaking transparency and robustness</li>
-<li>
-<code>QimNavigationApp</code>: Android application project for image watermarking using the native library</li>
-<li>
-<code>Images</code>: Screenshots</li>
-</ul><h2>
 <a name="objectives" class="anchor" href="#objectives"><span class="octicon octicon-link"></span></a>Objectives</h2>
 
 <p>The main objective is to implement a technique asserting that the content of an image has not been modified (Integrity), with constraints: </p>
@@ -82,17 +65,21 @@
 </ul><p>The signature insertion generate a "key file", which is needed for the detection.</p>
 
 <h2>
-<a name="android-application" class="anchor" href="#android-application"><span class="octicon octicon-link"></span></a>Android Application</h2>
+<a name="android-application--qim-app" class="anchor" href="#android-application--qim-app"><span class="octicon octicon-link"></span></a>Android Application : Qim App</h2>
 
-<p>The Android application uses the QimWatermaking native library (through JNI) to enable marking and integrity checking of images.</p>
+<p><em>Protect the content of you images with an invisible watermarking solution</em></p>
 
-<p>Technical challenges (as part of Télécom SudParis HighTech Imaging major):</p>
+<p>Qim App allows to check if the content of an image has been modified. An invisible "mark" is inserted in the image and a "key" file is generated. The inserted mark does not alter the appearance of the image. The Check function use the key file to assert if a marked image has been modified.</p>
+
+<p>Qim App is available on <a href="https://play.google.com/store/apps/details?id=com.cdricgmd.qimnavigationapp">Google Play</a> for free.</p>
+
+<p><strong>Technical challenges</strong> (as part of Télécom SudParis HighTech Imaging major):</p>
 
 <ul>
-<li>use a native library in Android (Write once...)</li>
+<li>use a native library in Android : The Android application uses the QimWatermaking native library (through JNI) to enable marking and integrity checking of images. Moreover it is an example of native code re-usage following a write-once strategy.</li>
 <li>demonstrate and evaluate performances of the library on lightweight devices</li>
 <li>give access to the library features <em>via</em> an easy and confortable user experience</li>
-</ul><p>Features: </p>
+</ul><p><strong>Features</strong> : </p>
 
 <ul>
 <li>mark an image loaded from the Image Library</li>
@@ -107,9 +94,43 @@
 <li>intermediate scores depend on image and attacks on content / format.</li>
 </ul>
 </li>
-</ul><p>Screenshots:</p>
+</ul><p><strong>How to mark an image ?</strong>
+1. On the instructions screen open an image from the library (memory card icon) or take a picture with the camera (camera icon).
+2. Then, swipe to the "Mark" panel and click to insert a mark in the image and generate the key file.
+3. Once process is done, insertion time and similarity measures (PSNR, SSIM) are displayed.
+4. You can share the marked image and the key file in the application via the <i>share</i> button;</p>
 
-<p><img src="Images/AppCheck.png" alt="Application check integrity screen" title="check integrity screen"><img src="Images/AppMark.png" alt="Application mark integrity screen" title="mark integrity screen"><img src="QimNavigationApp/res/drawable-mdpi/frame_grey_transp.png" alt="Application logo" title="Application logo"></p>
+<p><strong>How to check if a marked image has been modified ?</strong>
+1. On the instructions screen load a marked image from the library (memory card icon) and a key file (key icon).
+2. Then, swipe to the "Check" panel and click to launch the process.
+3. The detection algorithm returns a score between 0 and 1 : over 0.90 we consider that the content integrity has not been broken, under 0.80 we can say that the content has been modified.</p>
+
+<p><strong>NB:</strong> the marked images are stored in "Pictures/IntegrityApp" and the key files are stores in "Download/IntegrityApp".</p>
+
+<p><strong>Requirements</strong></p>
+
+<ul>
+<li>Qim App needs <a href="https://play.google.com/store/apps/details?id=org.opencv.engine">OpenCV Manager</a>, free on Google Play.</li>
+<li>Loading a key file stored on the terminal may require a <a href="https://play.google.com/store/search?q=file%20manager&amp;c=apps">file manager application</a>, like OI File Manager, free on Google Play.</li>
+</ul><p><strong>Screenshots:</strong></p>
+
+<p><em>Instructions</em></p>
+
+<p><img src="https://raw.github.com/CdricGmd/Qim-Integrity-App/master/Images/Instructions.png" alt="Instructions"></p>
+
+<p><em>Mark Integrity</em></p>
+
+<p><img src="https://raw.github.com/CdricGmd/Qim-Integrity-App/master/Images/mark_processing.png" alt="Mark processing"><img src="https://github.com/CdricGmd/Qim-Integrity-App/blob/master/Images/mark_done.png" alt="Mark done"></p>
+
+<p><em>Check Integrity</em></p>
+
+<p><img src="https://raw.github.com/CdricGmd/Qim-Integrity-App/master/Images/check_done_original.png" alt="Check done with original picture"><img src="https://raw.github.com/CdricGmd/Qim-Integrity-App/master/Images/check_done_hacked.png" alt="Check done with hacked image"></p>
+
+<hr><p>This application was developped for scientific and academic purposes, is proposed "as is" without result warranty.</p>
+
+<p>The source code (under MIT license) and technical aspects are availales on GitHub <a href="http://cdricgmd.github.io/Qim-Integrity-App">http://cdricgmd.github.io/Qim-Integrity-App</a> .</p>
+
+<p>Application developped as part of HighTech Imaging majot at Télécom SudParis, Institut Mines - Télécom.</p>
       </section>
       <footer>
         <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
