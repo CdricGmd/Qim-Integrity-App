@@ -1,0 +1,11 @@
+#privacy policy
+
+No piece of personal or sensible information is sent ourside of the app.
+This app works offline, and doesn't rely on any distant service.
+Image taken from the camera ou loaded from the user folder are kept on local storage. Camera acquisition, local storage and sharing APIS are handled by the operating system.
+
+#règles de confidentialité
+
+Aucune information sensible ou personnelle n'est transmise.
+Cette application fonctionne de façon hors-ligne et ne se repose pas sur un serivice ou des données distantes
+Les images prises avec la caméra ou chargée depuis les dossiers de l'utilisateurs, restent stockées localement. Les fonctions d'acquisition de la camera, de stockage local ou de partage sont gérées par les interfaces du système d'exploitation.
