@@ -62,9 +62,8 @@ Features:
   
 Screenshots:
 
-![Application check integrity screen](Images/AppCheck.png "check integrity screen")
-![Application mark integrity screen](Images/AppMark.png "mark integrity screen")
-![Application logo](QimNavigationApp/res/drawable-mdpi/frame_grey_transp.png "Application logo")
+![Application Instructions](Images/Instructions.png "instructions screen")
+![Application logo](QimNavigationApp/res/drawable-mdpi/frame_green.png "Application logo")
 
   
 
